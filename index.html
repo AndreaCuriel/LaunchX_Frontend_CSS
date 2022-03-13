@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vacunación</title>
+    <link rel="stylesheet" href="vacunacion.css">
+</head>
+<body>
+    <header>
+        <h3>Vacunación</h3>
+        <nav>
+            
+                <a href=""><button class="resaltar-boton">Información</button></a>
+                <a href=""><button class="resaltar-boton">Educación</button></a>
+                <a href=""><button class="resaltar-boton">Noticias</button></a>
+                <a href=""><button class="resaltar-boton">Regulación</button></a>
+                <a href=""><button class="resaltar-boton">Mitos</button></a>
+                
+        </nav>
+    </header>
+
+    <section class="columna2" id="motivacion">
+        <div class="izquierda">
+            <h1>Adios Virus</h1>
+            <h1 id="titulo-motivante">Con Vacunas</h1>
+            <p class="text-info">Todos vacunados matáremos al virus. Evitando el contagio y protegiendo a nuestra familia y a nosotros mismos</p>
+            <div id="container-calificacion">
+                <div>
+                    <img src="./icono-proteccion.png" alt="proteccion">
+                    <p>Mejor Protección</p>
+                </div>
+                <div>
+                    <img src="./icono-estrella.png" alt="estrella">
+                    <p>Vacunas seleccionadas</p>
+                </div>
+            </div>
+        </div>
+        <div class="derecha">
+            <img id="img-vacuna" src="./vacuna.png" alt="vacuna">
+        </div>
+    </section>
+
+    <section id="agendar">
+        <div>
+            <img id="img-tagendar" class="imagen-agendar" src="./icono-reloj.png" alt="reloj">
+            <h4>Agenda tu cita de vacunación</h4>
+        </div>
+        <div id="container-datos-cita">
+            <ul>
+                <li class="menu-agendar">
+                    <img class="imagen-agendar" src="./icono-direccion.png" alt="lugar">
+                    <label class="titulo-datos" for="lugar">Lugar</label>
+                </li>
+                <li class="datos-cita">
+                    <input type="text" id="lugar" name="lugar" value="Jakarta Utara">
+                </li>
+            </ul>
+             <ul>      
+                <li class="menu-agendar">
+                    <img class="imagen-agendar" src="./icono-fecha.png" alt="">
+                    <label class="titulo-datos" for="fecha">Fecha</label>
+                </li>
+                <li class="datos-cita">
+                    <input type="date" id="fecha" name="fecha">
+                </li>
+            </ul>
+            <ul>
+                <li class="menu-agendar">
+                    <img class="imagen-agendar" src="./icono-tipo.png" alt="tipo">
+                    <label class="titulo-datos" for="tipoV">Tipo de vacuna</label>
+                </li>
+                <li class="datos-cita">
+                    <select name="tipoV" id="tipoV">
+                        <option value="astrazeneca">AstraZeneca</option>
+                        <option value="sinovac">SINOVAC</option>
+                        <option value="pfizer">Pfizer</option>
+                        <option value="moderna">moderna</option>
+                    </select>
+                </li>
+            </ul>
+            <a href=""><button>Agendar</button></a>
+        </div>
+    </section>
+
+    <section id="marcas">
+        <a href=""><img src="./astrazeneca.png" alt="astrazaneca"></a>
+        <a href=""><img src="./sinovac.png" alt="sinovac"></a>
+        <a href=""><img src="./pfizer.png" alt="pfizer"></a>
+        <a href=""><img src="./moderna.png" alt="moderna"></a>
+    </section>
+
+    <section class="columna2" id="porque">
+        <div class="izquierda">
+            <h2 id="titulo-porque">¿Por Qué Vacunarte?</h2>
+            <p class="text-info">Para evitar confusión acerca de la vacuna contra el COVID 19, identifica los 4 beneficios de vacunarse:</p>
+        </div>
+        <div class="derecha"> 
+            <img src="./fondo-2.png" alt="">
+        </div>
+    </section>
+
+    <section  id="razones">
+        
+            
+            <div>
+                <img src="./icono-minimiza.png" alt="minimiza">
+                <h4>Minimiza el contagio del virus</h4>
+                <p>La vacuna ha sido provada efectivamente para prevenir que alguien se infecte de Coronavirus.</p>
+                
+            </div>
+            <div>
+                <img src="./icono-anticuerpos.png" alt="anticuerpos">
+                <h4>Desarrolla anticuerpos</h4>
+                <p>La vacuna COVID-19 es probada para ayudar a dar forma a la respuesta de anticuerpos para el sistema inmunitario.</p>
+            </div>
+            <div>
+                <img src="./icono-personas.png" alt="personas">
+               <h4>Protege a las personas cercanas</h4>
+               <p>La vacuna de COVID-19 que nosotros podemos conseguir puede también ayudar a protejer a las personas que nos rodean.</p>
+           </div>
+           <div>
+               <img src="./icono-grupos.png" alt="grupos">
+               <h4>Crea grupo de inmunidad</h4>
+               <p>La vacunación de COVID-19 también es beneficioso para crear inmunidad de grupo o inmunidad de rebaño.</p>
+           </div>
+        
+    </section>
+
+    <section class="columna2" id="preparacion">
+        <div class="izquierda"><img src="./imagen-antes.png" alt="preparacion"></div>
+        <div class="derecha" id="container-antes">
+            <h2 id="titulo-preparate">Preparación Para La Vacuna</h2>
+            <p class="text-info">El éxito de la vacuna es fuertemente influenciada por la resistencia del sistema inmune del cuerpo. Sin embargo, hay diversas cosas que pueden hacer que la vacuna sea eficiente.</p>
+            <div class="container">
+                <section id="menu1">
+                    <a class="acordion-encabezado" href="#menu1"><img class="icono-antes" src="./icono1.png" alt="icono1"><p> Evitar las bebidas alcoholicas</p><img class="giro" src="./icono-flecha.png" alt="flecha"></a>
+                    <p class="acordion-info">No se debe beber alcohol durante las 72 horas posteriores a la aplicación del biológico, debido a que reduce la respuesta inmunitaria y se puede confundir la intoxicación o la resaca con efectos adversos de la vacuna</p>
+                </section>
+                <section id="menu2">
+                    <a class="acordion-encabezado" href="#menu2"><img class="icono-antes" src="./icono2.png"alt="icono2"><p> El estres</p> <img class="giro" src="./icono-flecha.png" alt="flecha"></a>
+                    <p class="acordion-info">El estres tiene un profundo efecto en el funcionamiento inmune. Es mas, el estres prolongado puede incrementar la producccion de cortisol y y estrés oxidativo en el cuerpo.</p>
+                </section>
+                <section id="menu3">
+                    <a class="acordion-encabezado" href="#menu3"><img class="icono-antes" src="./icono3.png"alt="icono2"><p>Comer comida saludable </p><img class="giro" src="./icono-flecha.png" alt="flecha"></a>
+                    <p class="acordion-info"></p>
+                </section>
+                <section id="menu4">
+                    <a class="acordion-encabezado" href="#menu4"><img class="icono-antes" src="./icono4.png"alt="icono2"><p>Dormir suficiente</p> <img class="giro" src="./icono-flecha.png" alt="flecha"></a>
+                    <p class="acordion-info"></p>
+                </section>
+                <section id="menu5">
+                    <a class="acordion-encabezado" href="#menu5"><img class="icono-antes" src="./icono5.png"alt="icono2"><p>Reaizar ejercicio o actividades físicas</p> <img class="giro" src="./icono-flecha.png" alt="flecha"></a>
+                        <p class="acordion-info"></p></p> 
+                </section>
+            </div>
+        </div>
+    </section>
+
+    <section class="columna2" id="contacto">
+        <div class="izquierda">
+            <h2 id="titulo-contacto">Contacto De Emergencia</h2>
+            <p class="text-info">Contactanos con los siguientes medios si tu o tu familia no se sienten bien y tienen sintomas similares a los de Covid-19, asegurate también de mantenerte a salvo antes de reportarnos.</p>
+            <div id="contactos">
+                <div id="container-contactos">
+                    <div class="contacto-datos">
+                        <div>
+                            <img src="./icono-llamar.png" alt="llamar">
+                            <dl> 
+                                <dt> Llamar
+                                    <dd>
+                                        021.123.145.14
+                                    </dd>
+                                </dt>
+                                
+                            </dl>
+                        </div>
+                        <button>Llamar Ahora</button>
+                    </div>
+                    <div class="contacto-datos">
+                        <div>
+                            <img src="./icono-chat.png" alt="chat">
+                            <dl> 
+                                <dt>Chat
+                                    <dd>
+                                        021.123.145.14
+                                    </dd>
+                                </dt>
+                                
+                            </dl>
+                        </div>
+                        <button>Chat Ahora</button>
+                    </div>
+                </div>
+                <div id="container-contactos">
+                    <div class="contacto-datos">
+                        <div>
+                            <img src="./icono-video.png" alt="video">
+                            <dl>
+                                <dt> Video
+                                    <dd>
+                                        021.123.145.14
+                                    </dd>
+                                </dt>
+                                
+                            </dl>
+                        </div>
+                        <button>Video Ahora</button>
+
+                    </div>
+                    <div class="contacto-datos">
+                        <div>
+                            <img src="./icono-correo.png" alt="correo">
+                            <dl>
+                                <dt> Correo
+                                    <dd>
+                                        021.123.145.14
+
+                                    </dd>
+                                </dt>
+                                
+                            </dl>
+                        </div>
+                        <button>Correo Ahora</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="derecha"><img src="./Imagen-contacto.png" alt="contacto"></div>
+    </section>
+
+    <footer>
+        <section class="columna2" id="container-footer"> 
+            <div class="izquierda">
+                <dl>
+                    <dt> <h3>Vacunación</h3> 
+                        <dd>Nuestra meta es ayudar en la liberación del mundo de la actual pandemia </dd>
+                    </dt>
+                </dl>
+            </div>
+            <div class="derecha">
+                <div>
+                    <ul> Acerca
+                        <a href="">
+                            <li>Nosotros</li>
+                        </a>
+                        <a href="">
+                            <li>Descripción</li>
+                        </a>
+                        <a href="">
+                            <li>Noticias</li>
+                        </a>
+                    </ul>
+                </div>
+                <div>
+                    <ul> Compañia
+                        <a href="">
+                            <li>¿Cómo trabajamos?</li>
+                        </a>
+                        <a href="">
+                            <li>Capital</li>
+                        </a>
+                        <a href="">
+                            <li>Seguridad</li>
+                        </a>
+                    </ul>
+                </div>
+                <div>
+                    <ul> Soporte
+                        <a href="">
+                            <li>FAQs</li>
+                        </a>
+                        <a href="">
+                            <li>Soporte</li>
+                        </a>
+                        <a href="">
+                            <li>Contactanos</li>
+                        </a>
+                    </ul>
+                </div>
+
+            </div>
+            
+        </section>
+        <section class="columna2" id="container-footer2">
+            <div class="izquierda">
+                <a href="">@2021 Vacunacion. Derechos reservados </a>
+            </div>
+            <div class="derecha">
+                <a href="">Terminos y Condiciones</a>
+                <a href="">Politíca de privacidad</a>
+            </div>
+        </section>
+
+
+    </footer>
+    
+</body>
+</html>
